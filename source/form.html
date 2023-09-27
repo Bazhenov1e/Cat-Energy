@@ -1,78 +1,159 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-<head>
+  <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cat energy form</title>
-</head>
-<body class="page__body">
-	<header class="page-header">
-		<a href="index.html" class="page-header__logo logo">
-			<img
-				class="page-header__logo-image"
-				src="img/logo 2.svg"
-				width="101"
-				height="18"
-				alt="Логотип главной страницы"
-			/>
-		</a>
+    <title>Cat energy form</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo logo">
+        <img
+          class="page-header__logo-image"
+          src="img/logo 2.svg"
+          width="101"
+          height="18"
+          alt="Логотип главной страницы"
+        />
+      </a>
 
-		<nav class="main-nav">
-			<div class="main-nav__wrapper">
-				<ul class="main-nav__list site-list">
-					<li class="site-list__item site-list__item--active">
-						<a href="" class="site-list__link">Главная</a>
-					</li>
-					<li class="site-list__item">
-						<a href="" class="site-list__link">Каталог продукции</a>
-					</li>
-					<li class="site-list__item">
-						<a href="" class="site-list__link">Подбор программы</a>
-					</li>
-				</ul>
-			</div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="" class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="" class="site-list__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
 
-			<button class="main-nav__toggle" type="button">
-				<span class="visually-hidden">Открыть меню</span>
-			</button>
-		</nav>
-	</header>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </header>
 
-	<main class="page__main">
-		
-	</main>
+    <main class="page__main">
+      <section class="select-program">
+        <h1 class="select-program__title">
+          Подбор программы
+          <span class="select-program__subtitle"
+            >Заполните анкету, и мы подберем программу питания для вашего
+            кота</span
+          >
+        </h1>
 
-	<footer class="page-footer">
-		<a class="page-footer__logo" href="index.html">
-			<img src="img/logo 2.svg" alt="Логотип главной страницы" />
-		</a>
+				<form action="#" class="select-program__form form">
+					<fieldset class="form__field">
+						<legend class="visually-hidden">Персональные данные</legend>
+						<p class="form__item">
+							<label class="form__label" for="name">Имя:*</label>
+							<input class="form__input" id="name" type="text">
+						</p>
+						<p class="form__item">
+							<label class="form__label" for="weight">Вес:*</label>
+							<input class="form__input" id="weight" type="number">
+						</p>
+						<p class="form__item">
+							<label class="form__label" for="weight">Возраст (ЛЕТ):</label>
+							<input class="form__input" id="weight" type="number">
+						</p>
+					</fieldset>
 
-		<ul class="page-footer__social social-list">
-			<li class="social-list__item">
-				<a class="social-list__link" href="#">
-					<img src="img/icon_vkontakte.svg" alt="Мы в контакте" />
-				</a>
-			</li>
-			<li class="social-list__item">
-				<a class="social-list__link" href="#">
-					<img src="img/icon_instagram.svg" alt="Мы в Инстграм" />
-				</a>
-			</li>
-			<li class="social-list__item">
-				<a class="social-list__link" href="#">
-					<img src="img/icon_facebook.svg" alt="Мы на Фейсбук" />
-				</a>
-			</li>
-		</ul>
+					<fieldset class="form__field">
+						<legend class="visually-hidden">Выбор программы</legend>
+						<p class="form__item">
+							<label class="form__label" for="weightLose">Похудение</label>
+							<input class="form__radio" type="radio" name="weightLose" id="weightLose">
+						</p>
+						<p class="form__item">
+							<label class="form__label" for="weightGain">Набор массы</label>
+							<input class="form__radio" type="radio" name="weightGain" id="weightGain">
+						</p>
+						<p class="form__item">
+							<label class="form__label" for="adviceProgram">Не знаю (Нужен ваш совет)</label>
+							<input class="form__radio" type="radio" name="adviceProgram" id="adviceProgram">
+						</p>
+					</fieldset>
 
-		<div class="footer__copyright footer-developer">
-			<span class="footer-developer__name">HTML Academy</span>
-			<img
-				src="img/Лого_html 1.svg"
-				alt="Логотип разработчика"
-				class="footer-developer__icon"
-			/>
-		</div>
-	</footer>
-</body>
+					<fieldset class="form__field">
+						<legend class="form__legend">Контактные данные (Владельца кота)</legend>
+						<p class="form__item">
+							<label class="form__label" for="email"></label>
+							<input class="form__input" type="email" name="email" id="email">
+						</p>
+					</fieldset>
+
+					<fieldset class="form__field">
+						<legend class="form__legend">Комментарий</legend>
+						<p class="form__item">
+							<textarea class="form__textarea" placeholder="расскажите обо всех повадках кота" name="comments" id="" cols="30" rows="10"></textarea>
+						</p>
+					</fieldset>
+
+					<fieldset class="form__field">
+						<legend class="form__legend">Дополнительно</legend>
+						<p class="form__item">
+							<label class="form__label" for="sugurer">Сахорохаменитель</label>
+							<input class="form__input" id="sugurer" type="checkbox" checked>
+						</p>
+						<p class="form__item">
+							<label class="form__label" for="milk">молоко</label>
+							<input class="form__input" id="milk" type="checkbox">
+						</p>
+						<p class="form__item">
+							<label class="form__label" for="water">Питьевая вода</label>
+							<input class="form__input" id="water" type="checkbox">
+						</p>
+						<p class="form__item">
+							<label class="form__label" for="vitmins">витамины</label>
+							<input class="form__input" id="vitmins" type="checkbox">
+						</p>
+					</fieldset>
+					<div class="form__field">
+						<button class="form__button" type="submit">Отправить заявку</button>
+						<span>* - Обязательные поля</span>
+					</div>
+				</form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img src="img/logo 2.svg" alt="Логотип главной страницы" />
+      </a>
+
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img src="img/icon_vkontakte.svg" alt="Мы в контакте" />
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img src="img/icon_instagram.svg" alt="Мы в Инстграм" />
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <img src="img/icon_facebook.svg" alt="Мы на Фейсбук" />
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer__copyright footer-developer">
+        <span class="footer-developer__name">HTML Academy</span>
+        <img
+          src="img/Лого_html 1.svg"
+          alt="Логотип разработчика"
+          class="footer-developer__icon"
+        />
+      </div>
+    </footer>
+  </body>
 </html>
