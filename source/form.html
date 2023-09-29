@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
   <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cat energy form</title>
   </head>
   <body class="page__body">
@@ -48,78 +48,104 @@
           >
         </h1>
 
-				<form action="#" class="select-program__form form">
-					<fieldset class="form__field">
-						<legend class="visually-hidden">Персональные данные</legend>
-						<p class="form__item">
-							<label class="form__label" for="name">Имя:*</label>
-							<input class="form__input" id="name" type="text">
-						</p>
-						<p class="form__item">
-							<label class="form__label" for="weight">Вес:*</label>
-							<input class="form__input" id="weight" type="number">
-						</p>
-						<p class="form__item">
-							<label class="form__label" for="weight">Возраст (ЛЕТ):</label>
-							<input class="form__input" id="weight" type="number">
-						</p>
-					</fieldset>
+        <form action="#" class="select-program__form form">
+          <fieldset class="form__field">
+            <legend class="visually-hidden">Персональные данные</legend>
+            <p class="form__item">
+              <label class="form__label" for="name">Имя:*</label>
+              <input class="form__input" id="name" type="text" />
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="weight">Вес:*</label>
+              <input class="form__input" id="weight" type="number" />
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="weight">Возраст (ЛЕТ):</label>
+              <input class="form__input" id="weight" type="number" />
+            </p>
+          </fieldset>
 
-					<fieldset class="form__field">
-						<legend class="visually-hidden">Выбор программы</legend>
-						<p class="form__item">
-							<label class="form__label" for="weightLose">Похудение</label>
-							<input class="form__radio" type="radio" name="weightLose" id="weightLose">
-						</p>
-						<p class="form__item">
-							<label class="form__label" for="weightGain">Набор массы</label>
-							<input class="form__radio" type="radio" name="weightGain" id="weightGain">
-						</p>
-						<p class="form__item">
-							<label class="form__label" for="adviceProgram">Не знаю (Нужен ваш совет)</label>
-							<input class="form__radio" type="radio" name="adviceProgram" id="adviceProgram">
-						</p>
-					</fieldset>
+          <fieldset class="form__field">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <p class="form__item">
+              <label class="form__label" for="weightLose">Похудение</label>
+              <input
+                class="form__radio"
+                type="radio"
+                name="weightLose"
+                id="weightLose"
+              />
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="weightGain">Набор массы</label>
+              <input
+                class="form__radio"
+                type="radio"
+                name="weightGain"
+                id="weightGain"
+              />
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="adviceProgram"
+                >Не знаю (Нужен ваш совет)</label
+              >
+              <input
+                class="form__radio"
+                type="radio"
+                name="adviceProgram"
+                id="adviceProgram"
+              />
+            </p>
+          </fieldset>
 
-					<fieldset class="form__field">
-						<legend class="form__legend">Контактные данные (Владельца кота)</legend>
-						<p class="form__item">
-							<label class="form__label" for="email"></label>
-							<input class="form__input" type="email" name="email" id="email">
-						</p>
-					</fieldset>
+          <fieldset class="form__field">
+            <legend class="form__legend">
+              Контактные данные (Владельца кота)
+            </legend>
+            <p class="form__item">
+              <label class="form__label" for="email"></label>
+              <input class="form__input" type="email" name="email" id="email" />
+            </p>
+          </fieldset>
 
-					<fieldset class="form__field">
-						<legend class="form__legend">Комментарий</legend>
-						<p class="form__item">
-							<textarea class="form__textarea" placeholder="расскажите обо всех повадках кота" name="comments" id="" cols="30" rows="10"></textarea>
-						</p>
-					</fieldset>
+          <fieldset class="form__field">
+            <legend class="form__legend">Комментарий</legend>
+            <p class="form__item">
+              <textarea
+                class="form__textarea"
+                placeholder="расскажите обо всех повадках кота"
+                name="comments"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </p>
+          </fieldset>
 
-					<fieldset class="form__field">
-						<legend class="form__legend">Дополнительно</legend>
-						<p class="form__item">
-							<label class="form__label" for="sugurer">Сахорохаменитель</label>
-							<input class="form__input" id="sugurer" type="checkbox" checked>
-						</p>
-						<p class="form__item">
-							<label class="form__label" for="milk">молоко</label>
-							<input class="form__input" id="milk" type="checkbox">
-						</p>
-						<p class="form__item">
-							<label class="form__label" for="water">Питьевая вода</label>
-							<input class="form__input" id="water" type="checkbox">
-						</p>
-						<p class="form__item">
-							<label class="form__label" for="vitmins">витамины</label>
-							<input class="form__input" id="vitmins" type="checkbox">
-						</p>
-					</fieldset>
-					<div class="form__field">
-						<button class="form__button" type="submit">Отправить заявку</button>
-						<span>* - Обязательные поля</span>
-					</div>
-				</form>
+          <fieldset class="form__field">
+            <legend class="form__legend">Дополнительно</legend>
+            <p class="form__item">
+              <label class="form__label" for="sugurer">Сахорохаменитель</label>
+              <input class="form__input" id="sugurer" type="checkbox" checked />
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="milk">молоко</label>
+              <input class="form__input" id="milk" type="checkbox" />
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="water">Питьевая вода</label>
+              <input class="form__input" id="water" type="checkbox" />
+            </p>
+            <p class="form__item">
+              <label class="form__label" for="vitmins">витамины</label>
+              <input class="form__input" id="vitmins" type="checkbox" />
+            </p>
+          </fieldset>
+          <div class="form__field">
+            <button class="form__button" type="submit">Отправить заявку</button>
+            <span>* - Обязательные поля</span>
+          </div>
+        </form>
       </section>
     </main>
 
