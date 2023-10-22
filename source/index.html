@@ -12,14 +12,14 @@
       <a class="page-header__logo logo" href="index.html">
         <img
           class="logo__img"
-          src="img/logo-mobile.svg"
+          src="img/svg/logo-mobile.svg"
           width="33"
           height="37"
           alt="Логотип главной страницы"
         />
         <img
           class="logo__sign"
-          src="img/logo_2.svg"
+          src="img/svg/logo-sign.svg"
           width="101"
           height="18"
           alt="Cat Energy"
@@ -58,13 +58,27 @@
         <p class="choose-plan__description">Занялся собой? Займись котом!</p>
         <a class="choose-plan__button" href="form.html">Подобрать программу</a>
         <div class="choose-plan__img-container">
-          <img
-            class="choose-plan__img"
-            src="img/index-can-mobile 1.png"
-            width="280"
-            height="270"
-            alt="Премиальное питание для котов"
-          />
+          <picture>
+            <source
+              media="(min-width: 1220px)"
+              width="552"
+              height="499"
+              srcset="img/index-can-desktop.png"
+            />
+            <source
+              media="(min-width: 768px)"
+              width="709"
+              height="609"
+              srcset="img/index-can-tablet.png"
+            />
+            <img
+              class="choose-plan__img"
+              src="img/index-can-mobile.png"
+              width="280"
+              height="270"
+              alt="Премиальное питание для котов"
+            />
+          </picture>
         </div>
       </section>
 
@@ -155,11 +169,17 @@
         <div class="example__slider example-slider">
           <div class="example-slider__img-container">
             <div class="example-slider__item example-slider__item--before">
-              <img src="img/cat-fat.png" alt="результат до" />
+              <img
+                src="img/before-mobile.png"
+                width="280"
+                height="232"
+                alt="результат до"
+              />
             </div>
-            <div class="example-slider__item example-slider__item--after">
+            <!-- Скрыл так как на мобильной версии слайдер и показывает только 1 картинка -->
+            <!-- <div class="example-slider__item example-slider__item--after">
               <img src="img/cat-skinny.png" alt="Результат после" />
-            </div>
+            </div> -->
           </div>
           <div class="example-slider__controls range">
             <span class="range__before">Было</span>
@@ -184,19 +204,33 @@
           </address>
         </div>
         <div class="contacts__map">
-          <img
-            src="img/map-mobile.png"
-            width="320"
-            height="362"
-            alt="Карта - где мы находимся"
-          />
+          <picture>
+            <source
+              srcset="img/map-desktop.png"
+              width="1440"
+              height="400"
+              media="(min-width: 1220px)"
+            />
+            <source
+              srcset="img/map-tablet.png"
+              width="768"
+              height="400"
+              media="(min-width: 768px)"
+            />
+            <img
+              src="img/map-mobile.png"
+              width="320"
+              height="362"
+              alt="Карта - где мы находимся"
+            />
+          </picture>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img src="img/logo 2.svg" alt="Логотип главной страницы" />
+        <img src="img/svg/logo-sign.svg" alt="Логотип главной страницы" />
       </a>
 
       <ul class="page-footer__social social-list">
