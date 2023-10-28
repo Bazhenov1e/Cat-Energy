@@ -1,9 +1,9 @@
 .choose-plan {
 	padding: 20px;
 
-	color: @color--white;
+	color: $color--white;
 
-	background-color: @color-primary-500;
+	background-color: $color-primary-500;
 	background-image: url(../../img/index-background-desktop-mobile.png);
 	background-position: top;
 	background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 }
 
 .choose-plan__title {
-	font-family: @font-heading;
+	font-family: $font-heading;
 	font-size: 36px;
 	line-height: 1;
 	font-style: normal;

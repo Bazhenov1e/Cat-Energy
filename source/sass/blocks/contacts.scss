@@ -15,7 +15,7 @@
     text-transform: uppercase;
     text-align: left;
 
-    color: @color-gray-900;
+    color: $color-gray-900;
 }
 
 .contacts__adress {
@@ -26,5 +26,5 @@
     font-weight: 400;
     text-align: left;
     
-    color: @color-gray-700;
+    color: $color-gray-700;
 }
