@@ -1,0 +1,40 @@
+.additional-catalog {
+
+}
+
+.additional-catalog__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    font-style: normal;
+    font-weight: 400;
+    color: $color--black;
+
+    margin: 0;
+}
+
+.additional-catalog__list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+
+
+.additional-catalog__promo {
+    min-height: 300px;
+    background-color: $color-primary-500;
+    background-image: url(../../img/additional-catalog__bg_mobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.additional-catalog__promo-text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: $color--white;
+}

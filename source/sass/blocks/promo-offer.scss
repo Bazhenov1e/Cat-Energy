@@ -1,0 +1,13 @@
+.promo-offer {
+    
+}
+
+.promo-offer__list {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.promo-offer__item:not(:last-child) {
+    margin-bottom: 20px;
+}

@@ -30,4 +30,443 @@
 .page__body {
   margin: 0;
 }
+
+.choose-plan {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #68b738;
+  background-image: url(../../img/index-backgorund-mobile.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+}
+
+.choose-plan__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.choose-plan__description {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.choose-plan__button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #68b738;
+}
+
+.promo-offer__list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.promo-offer__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.promo {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.promo__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+}
+
+.promo__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+}
+
+.promo__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.button {
+  color: #ffffff;
+  font: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #68b738;
+}
+
+.site-list {
+  display: block;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.site-list__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product {
+  padding: 20px;
+}
+
+.product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.product__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #444444;
+}
+
+.product__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  background-color: #68b738;
+}
+
+.expertise {
+  padding: 0 20px;
+}
+
+.expertise__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 1.1;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+.expertise__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.expertise__item {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+}
+
+.example {
+  padding: 25px 20px;
+  background-color: #eaeaea;
+}
+
+.example__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 1.1;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+  margin: 0;
+}
+
+.example__item {
+  margin: 0;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+.example__definition {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 0;
+  color: #444444;
+}
+
+.example__cost {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.contacts__content {
+  padding: 25px 20px;
+}
+
+.contacts__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  color: #111111;
+}
+
+.contacts__adress {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  color: #444444;
+}
+
+.social-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.page-main__heading {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+.page-main__subheading {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form__field {
+  margin: 0;
+  padding: 0;
+}
+
+.form__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #000000;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  background-color: #68b738;
+}
+
+.field-group {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+  border: none;
+}
+
+.field-group__legend {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+.field-group__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+.show-more__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.show-more__description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+}
+
+.show-more__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #444444;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.additional-catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  margin: 0;
+}
+
+.additional-catalog__list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.additional-catalog__promo {
+  min-height: 300px;
+  background-color: #68b738;
+  background-image: url(../../img/additional-catalog__bg_mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.additional-catalog__promo-text {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.additional-product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.additional-product__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
+}
+
+.additional-product__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background-color: #68b738;
+}
 /*# sourceMappingURL=style.css.map */

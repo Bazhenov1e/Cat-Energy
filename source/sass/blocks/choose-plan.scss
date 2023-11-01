@@ -1,30 +1,56 @@
 .choose-plan {
-	padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 
-	color: $color--white;
 
-	background-color: $color-primary-500;
-	background-image: url(../../img/index-background-desktop-mobile.png);
-	background-position: top;
-	background-repeat: no-repeat;
-
-	text-align: center;
+  background-color: $color-primary-500;
+  background-image: url(../../img/index-backgorund-mobile.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  color: $color--white;
+  text-align: center;
 }
 
+// .choose-plan__img-container {
+
+// }
+
+// .choose-plan__content {
+ 
+// }
+
 .choose-plan__title {
-	font-family: $font-heading;
-	font-size: 36px;
-	line-height: 1;
-	font-style: normal;
-	font-weight: 400;
-	text-align: center;
+  font-family: $font-heading;
+  font-size: 36px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
 }
 
 .choose-plan__description {
-	font-family: 'Oswald', sans-serif;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1;
-	text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
 }
+
+
+.choose-plan__button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $color--white;
+  text-decoration: none;
+
+  background-color: $color-primary-500;
+} 
