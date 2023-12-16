@@ -5,19 +5,25 @@
 .form__field {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .form__button {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
-  line-height: 1.1; 
-  color: $color--black;
-  font-style: normal;
   text-transform: uppercase;
-  text-align: center;
-
   border: none;
+  color: $color--white;
 
   background-color: $color-primary-500;
+}
+
+.form__notification {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+  color: $color--black;
 }

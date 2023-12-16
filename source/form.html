@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <title>Cat energy form</title>
   </head>
 
-  <body class="page__body">
+  <body>
     <header class="page-header">
       <a class="page-header__logo logo" href="index.html">
         <img
@@ -262,11 +262,11 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__field field-group">
-            <legend class="field-group__legend">Дополнительно</legend>
+          <fieldset class="form__field field-additional">
+            <legend class="field-additional__legend">Дополнительно</legend>
 
-            <ul class="field-group__list">
-              <li class="field-group__item">
+            <ul class="field-additional__list">
+              <li class="field-additional__item">
                 <label class="field">
                   <input
                     class="form__input"
@@ -277,13 +277,13 @@
                   <span class="field__lead">Сахорохаменитель</span>
                 </label>
               </li>
-              <li class="field-group__item">
+              <li class="field-additional__item">
                 <label class="field">
                   <input class="form__input" type="checkbox" name="milk" />
                   <span class="field__lead">Молоко</span>
                 </label>
               </li>
-              <li class="field-group__item">
+              <li class="field-additional__item">
                 <label class="field">
                   <input
                     class="form__input"
@@ -293,7 +293,7 @@
                   <span class="field__lead">Питьевая вода</span>
                 </label>
               </li>
-              <li class="field-group__item">
+              <li class="field-additional__item">
                 <label class="field">
                   <input class="form__input" type="checkbox" name="vitamins" />
                   <span class="field__lead">Витамины</span>
@@ -301,16 +301,16 @@
               </li>
             </ul>
           </fieldset>
-          <div class="form__field">
+          <div class="form__submit-wrapper">
             <button class="form__button" type="submit">Отправить заявку</button>
-            <span>* - Обязательные поля</span>
+            <span class="form__notification"><sup>*</sup>&#32;— Обязательные поля</span>
           </div>
         </form>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__content">
+        <div class="contacts__content contacts__content--inner">
           <p class="contacts__title">приглашаем к сотрудничеству диллеров!</p>
           <address class="contacts__adress">
             <span
@@ -320,7 +320,7 @@
             <span>Санкт-Петербург</span>
           </address>
         </div>
-        <div class="contacts__map">
+        <div class="contacts__map map">
           <picture>
             <source
               srcset="img/map-desktop.png"
@@ -335,6 +335,7 @@
               media="(min-width: 768px)"
             />
             <img
+              class="map__img"
               src="img/map-mobile.png"
               width="320"
               height="362"

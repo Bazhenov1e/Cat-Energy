@@ -1,33 +1,21 @@
-.additional-product {}
-
 .additional-product__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 16px;
-    line-height: 1;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $color-gray-850;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-gray-850;
 }
 
 .additional-product__description {
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 1;
-    font-style: normal;
-    font-weight: 400;
-    color: $color-gray-700;
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .additional-product__link {
-   font-family: "Oswald", sans-serif; 
-   font-size: 16px;
-   line-height: 1.25;
-   font-style: normal;
-   font-weight: 400;
-   text-transform: uppercase;
-   text-decoration: none;
-   color: $color--black;
-
-   background-color: $color-primary-500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color--white;
+  background-color: $color-primary-500;
 }

@@ -1,25 +1,31 @@
 // Global
-@use "fonts.scss" as *;
-@use "variables.scss" as *;
+@import "fonts.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "blocks/visually-hidden.scss";
 
 // Блоки
-@import "../sass/blocks/visually-hidden.scss";
-@import "../sass/blocks/page.scss";
-@import "../sass/blocks/choose-plan.scss";
-@import "../sass/blocks/promo-offer.scss";
-@import "../sass/blocks/promo.scss";
-@import "../sass/blocks/button.scss";
-@import "../sass/blocks/site-list.scss";
-@import "../sass/blocks/product.scss";
-@import "../sass/blocks/expertise.scss";
-@import "../sass/blocks/example.scss";
-@import "../sass/blocks/contacts.scss";
-@import "../sass/blocks/social-list.scss";
-@import "../sass/blocks/page-main.scss";
-@import "../sass/blocks/form.scss";
-@import "../sass/blocks/field-group.scss";
-@import "../sass/blocks/catalog.scss";
-@import "../sass/blocks/show-more.scss";
-@import "../sass/blocks/additional-catalog.scss";
-@import "../sass/blocks/additional-product.scss";
-
+@import "blocks/choose-plan.scss";
+@import "blocks/promo-offer.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/button.scss";
+@import "blocks/site-list.scss";
+@import "blocks/product.scss";
+@import "blocks/expertise.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/map.scss";
+@import "blocks/social-list.scss";
+@import "blocks/page-main.scss";
+@import "blocks/select-program.scss";
+@import "blocks/form.scss";
+@import "blocks/field-group.scss";
+@import "blocks/field.scss";
+@import "blocks/field-additional.scss";
+@import "blocks/control.scss";
+@import "blocks/catalog.scss";
+@import "blocks/table.scss";
+@import "blocks/show-more.scss";
+@import "blocks/additional-catalog.scss";
+@import "blocks/additional-product.scss";
+@import "blocks/developer.scss";

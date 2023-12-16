@@ -1,29 +1,21 @@
-.contacts {
-}
-
 .contacts__content {
   padding: 25px 20px;
+
+  &--inner {
+    background-color: $color-gray-50;
+  }
 }
 
 .contacts__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 1.25;
-  font-style: normal;
-  font-weight: 400;
+  line-height: 20px;
   text-transform: uppercase;
-  text-align: left;
-
   color: $color-gray-900;
 }
 
 .contacts__adress {
-  font-family: "Arial", sans-serif;
+  font-family: $font-secondary;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 20px;
   font-style: normal;
-  font-weight: 400;
-  text-align: left;
-
   color: $color-gray-700;
 }
