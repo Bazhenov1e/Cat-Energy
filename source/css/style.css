@@ -71,7 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-image: url(../../img/index-backgorund-mobile.png);
+  background-image: url("../../img/index-backgorund-mobile.png");
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -257,7 +257,7 @@ body {
   color: #111111;
 }
 
-.contacts__adress {
+.contacts__address {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
