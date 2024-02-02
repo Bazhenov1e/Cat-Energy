@@ -1,3 +1,37 @@
 .control {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  padding-left: 45px;
+  min-height: 30px;
+
   color: $color-gray-850;
+}
+
+.control__lead {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/svg/radio-off.svg');
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control__radio {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:checked + .control__lead {
+    background-image: url('../img/svg/radio-on.svg');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

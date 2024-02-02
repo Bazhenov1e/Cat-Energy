@@ -1,6 +1,18 @@
+.promo-offer {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+}
+
 .promo-offer__item {
   padding: 18px 20px;
   background-color: $color-gray-50;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+  }
 }
 
 .promo-offer__item:not(:last-child) {
@@ -8,21 +20,104 @@
 }
 
 .promo-offer__title {
+  position: relative;
+  padding: 9px 0px 7px 80px;
+  margin-bottom: 22px;
+
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   text-transform: uppercase;
+
+  &--slim:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../../img/svg/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  &--pro::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 67px;
+    height: 50px;
+    background-image: url("../../img/svg/cat-pro.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    
+    &--slim::before {
+      left: auto;
+      right: 0;
+      top: 50%;
+      transform: translateY(-5%);
+      width: 200px;
+      height: 200px;
+    }
+
+    &--pro::before {
+      left: auto;
+      right: -3%;
+      top: 50%;
+      transform: translateY(-5%);
+      width: 250px;
+      height: 200px;
+    }
+  }
 }
 
 .promo-offer__description {
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 18px;
   color: $color-gray-700;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+    max-width: 62%;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .promo-offer__link {
+  position: relative;
+  padding-right: 40px;
+
   line-height: 16px;
   text-transform: uppercase;
   color: $color--black;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-image: url("../../img/svg/arrow-right.svg");
+  }
 }

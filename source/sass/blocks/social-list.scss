@@ -1,0 +1,26 @@
+.social-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid $color-gray-200;
+  border-bottom: 1px solid $color-gray-200;
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    border: none;
+  }
+}
+
+.social-list__item {
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+}

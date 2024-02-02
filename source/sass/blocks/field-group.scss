@@ -3,6 +3,45 @@
   line-height: 26px;
 
   padding: 0;
+  margin-bottom: 35px;
 
+  text-transform: none;
   color: $color--black;
+}
+
+.field-group__list {
+  display: grid;
+  row-gap: 13px;
+}
+
+.field-group__label {
+  position: relative;
+  padding-left: 46px;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.field-group__checkbox {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:checked + .field-group__lead {
+    background-image: url('../img/svg/checkbox-on.svg');
+  }
+}
+
+.field-group__lead {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/svg/checkbox-off.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
 }

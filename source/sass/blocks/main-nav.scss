@@ -1,0 +1,30 @@
+.main-nav {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0;
+  }
+}
+
+.main-nav__logo-wrapper {
+  padding: 10px 0 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  // margin-left: 30px *-1;
+  // margin-right: 30px *-1;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}

@@ -1,0 +1,27 @@
+.input {
+  display: block;
+  padding: 12px 13px;
+  border: 1px solid #e7e7e7;
+
+  font: inherit;
+  text-transform: uppercase;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  &--textarea {
+    
+    padding: 8px;
+    min-height: 150px;
+
+    white-space: nowrap;
+    resize: none;
+  }
+}

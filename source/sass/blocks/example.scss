@@ -8,16 +8,62 @@
   background-color: $color-gray-100;
 }
 
+.example__content {
+  display: flex;
+  flex-direction: column;
+}
+
 .example__heading {
+  margin-top: 5px;
+  margin-bottom: 40px;
+
   font-family: $font-main;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: $color--black;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+    margin-bottom: 60px;
+
+    font-size: 60px;    
+    line-height: 60px;
+  }
+}
+
+.example__description {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 366px;
+  }
 }
 
 .example__item {
+  position: relative;
+
   margin: 0;
+  padding: 15px 0;
+  width: 44%;
+  border: 1px solid #bcbcbc;
+  border-radius: 3px;
+
+  text-align: center;
 }
 
 .example__title {
@@ -26,26 +72,81 @@
   line-height: 24px;
 
   color: $color--black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__definition {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -17px;
+
+  display: inline-flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0;
+
   font-size: 12px;
   line-height: 12px;
-  margin: 0;
+
+  background-color: $color-gray-100;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__cost {
+  margin-bottom: 40px;
+
   font-family: $font-main;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+
   color: $color--black;
+
+  @media (min-width: $tablet-width) {
+    max-width: 180px;
+
+    font-size: 20px;
+    text-align: right;
+  }
+}
+
+.example__effects {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.example-slider__img-container {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 25px;
 }
 
 .example-slider__controls {
+  display: flex;
+  justify-content: space-between;
+
   font-family: $font-main;
   font-size: 16px;
   line-height: 20px;
   color: $color--black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 590px;
+  }
 }

@@ -1,5 +1,25 @@
+.catalog__head-container {
+  padding: 0 20px;
+}
+
 .catalog__title {
+  margin-top: 25px;
+  margin-bottom: 40px;
+
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__item {
+  border-bottom: 1px solid $color-gray-200;
+
+  &:first-child {
+    border-top: 1px solid $color-gray-200;
+  }
 }

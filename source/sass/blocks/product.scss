@@ -1,4 +1,24 @@
+.product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  padding: 5px 20px 23px;
+}
+
+.product__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__content {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
 .product__title {
+  margin-bottom: 18px;
+
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -14,12 +34,17 @@
 }
 
 .product__button {
+  grid-column: 1 / -1;
+
+  padding: 10px;
+
   font-family: $font-main;
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
   color: $color--white;
 
   border: none;

@@ -1,4 +1,14 @@
 .developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
   font-family: $font-secondary;
   color: $color-gray-700;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
 }
