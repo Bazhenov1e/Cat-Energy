@@ -6,6 +6,20 @@
   color: $color-gray-700;
 
   background-color: $color-gray-100;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 590px 590px;
+    column-gap: 40px;
+    justify-content: center;
+
+    background-color: transparent;
+    background-image: linear-gradient(
+      180deg,
+      $color--white 30%,
+      $color-gray-100 30%
+    );
+  }
 }
 
 .example__content {
@@ -23,13 +37,16 @@
   font-weight: 400;
   color: $color--black;
 
-
   @media (min-width: $tablet-width) {
     margin-top: 15px;
     margin-bottom: 60px;
 
-    font-size: 60px;    
+    font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 145px;
   }
 }
 
@@ -42,6 +59,10 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .example__numbers {
@@ -51,6 +72,14 @@
 
   @media (min-width: $tablet-width) {
     min-width: 366px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-start;
   }
 }
 
@@ -101,6 +130,18 @@
   }
 }
 
+.example__effects {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
 .example__cost {
   margin-bottom: 40px;
 
@@ -118,13 +159,12 @@
     font-size: 20px;
     text-align: right;
   }
-}
 
-.example__effects {
-
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: 365px;
+    align-self: stretch;
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 }

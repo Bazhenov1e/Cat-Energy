@@ -3,3 +3,12 @@
   flex-direction: column;
   align-items: center;
 }
+
+.example-slider__item {
+  &--after {
+    display: none;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}

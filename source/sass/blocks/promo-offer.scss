@@ -1,9 +1,29 @@
 .promo-offer {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    padding-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 80px;
+    padding-bottom: 35px;
+  }
+}
+
+.promo-offer__list {
+  display: grid;
+  row-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+  grid-template-columns: repeat(2, 570px);
+  column-gap: 80px;
+  }
+
 }
 
 .promo-offer__item {
@@ -15,9 +35,9 @@
   }
 }
 
-.promo-offer__item:not(:last-child) {
-  margin-bottom: 20px;
-}
+// .promo-offer__item:not(:last-child) {
+//   margin-bottom: 20px;
+// }
 
 .promo-offer__title {
   position: relative;

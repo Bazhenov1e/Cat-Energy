@@ -24,6 +24,11 @@
     grid-column-gap: 137px;
     grid-row-gap: 110px;
   };
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .expertise__item {

@@ -18,10 +18,21 @@
 
     background: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .choose-plan__content {
   display: grid;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 50% 50%;
+
+    margin: 0 80px;
+    width: 1060px;
+  }
 }
 
 .choose-plan__title {
@@ -37,6 +48,11 @@
 
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 100px;
+    margin-left: 0;
   }
 }
 
@@ -54,12 +70,21 @@
     margin-left: 88px;
     margin-bottom: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .choose-plan__picture {
   grid-column: 1/-1;
   grid-row: 3/5;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/5;
+  }
 }
 
 .choose-plan__button {
@@ -86,5 +111,9 @@
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }

@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <div class="content-wrapper">
         <nav class="main-nav">
           <div class="main-nav__logo-wrapper">
@@ -48,44 +48,45 @@
           </ul>
         </nav>
       </div>
+      <section class="choose-plan">
+        <div class="content-wrapper">
+          <div class="choose-plan__content">
+            <h2 class="choose-plan__title">
+              Функциональное<br />
+              питание для котов
+            </h2>
+            <p class="choose-plan__description">Занялся собой? Займись котом!</p>
+            <picture class="choose-plan__picture">
+              <source
+                media="(min-width: 1220px)"
+                width="552"
+                height="499"
+                srcset="img/index-can-desktop.png"
+              />
+              <source
+                media="(min-width: 768px)"
+                width="709"
+                height="609"
+                srcset="img/index-can-tablet.png"
+              />
+              <img
+                class="choose-plan__img"
+                src="img/index-can-mobile.png"
+                width="280"
+                height="270"
+                alt="Премиальное питание для котов"
+              />
+            </picture>
+            <a class="choose-plan__button" href="form.html"
+              >Подобрать программу</a
+            >
+          </div>
+        </div>
+      </section>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Интернет магазин - Cat energy</h1>
-
-      <section class="choose-plan">
-        <div class="choose-plan__content">
-          <h2 class="choose-plan__title">
-            Функциональное<br />
-            питание для котов
-          </h2>
-          <p class="choose-plan__description">Занялся собой? Займись котом!</p>
-          <picture class="choose-plan__picture">
-            <source
-              media="(min-width: 1220px)"
-              width="552"
-              height="499"
-              srcset="img/index-can-desktop.png"
-            />
-            <source
-              media="(min-width: 768px)"
-              width="709"
-              height="609"
-              srcset="img/index-can-tablet.png"
-            />
-            <img
-              class="choose-plan__img"
-              src="img/index-can-mobile.png"
-              width="280"
-              height="270"
-              alt="Премиальное питание для котов"
-            />
-          </picture>
-          <a class="choose-plan__button" href="form.html"
-            >Подобрать программу</a
-          >
-        </div>
-      </section>
 
       <div class="content-wrapper">
         <section class="promo-offer">
@@ -184,6 +185,7 @@
             <div class="example-slider__item example-slider__item--before">
               <picture>
                 <source
+                  media="(min-width: 768px)"
                   srcset="img/cat-fat-tablet.png"
                   width="296"
                   height="511"
@@ -200,6 +202,7 @@
             <div class="example-slider__item example-slider__item--after">
               <picture>
                 <source
+                  media="(min-width: 768px)"
                   srcset="img/cat-skinny-tablet.png"
                   width="296"
                   height="511"

@@ -1,3 +1,7 @@
+.contacts {
+  position: relative;
+}
+
 .contacts__content {
   display: flex;
   justify-content: space-between;
@@ -9,6 +13,15 @@
 
   @media (min-width: $tablet-width) {
     padding: 55px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 80px;
+    max-width: 565px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: $color--white;
   }
 }
 
@@ -46,9 +59,10 @@
     line-height: 20px;
     text-align: right;
   }
-  
 }
 
 .contacts__city {
-  margin-top: 18px;
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+  }
 }
