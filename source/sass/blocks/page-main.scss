@@ -5,6 +5,13 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-main__subheading {
@@ -13,4 +20,22 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.page-main__inner {
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }

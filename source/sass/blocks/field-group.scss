@@ -11,7 +11,46 @@
 
 .field-group__list {
   display: grid;
-  row-gap: 13px;
+
+  &--parameters {
+    row-gap: 13px;
+
+    @media (min-width: $tablet-width) {
+      row-gap: 20px;
+    }
+  }
+
+  &--program {
+    row-gap: 13px;
+  }
+
+  &--contacts {
+    row-gap: 14px;
+
+    @media (min-width: $tablet-width) {
+      row-gap: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(2, 570px);
+      column-gap: 80px;
+    }
+  }
+
+  &--additional {
+    row-gap: 13px;
+
+    @media (min-width: $tablet-width) {
+      grid-template-columns: repeat(2, minmax(280px, 500px));
+      row-gap: 30px;
+      column-gap: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 230px);
+      justify-content: space-between;
+    }
+  }
 }
 
 .field-group__label {
@@ -29,7 +68,7 @@
   -moz-appearance: none;
 
   &:checked + .field-group__lead {
-    background-image: url('../img/svg/checkbox-on.svg');
+    background-image: url("../img/svg/checkbox-on.svg");
   }
 }
 
@@ -40,7 +79,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  background-image: url('../img/svg/checkbox-off.svg');
+  background-image: url("../img/svg/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 30px;

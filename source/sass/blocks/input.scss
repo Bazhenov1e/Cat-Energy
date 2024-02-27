@@ -13,6 +13,7 @@
   }
 
   &[type=number] {
+    appearance: textfield;
     -moz-appearance: textfield;
   }
 
@@ -23,5 +24,9 @@
 
     white-space: nowrap;
     resize: none;
+
+    @media (min-width: $desktop-width) {
+      padding: 10px 20px;
+    }
   }
 }

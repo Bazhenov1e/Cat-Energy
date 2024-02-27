@@ -3,6 +3,12 @@
   grid-template-columns: repeat(2, 1fr);
 
   padding: 5px 20px 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 35px 39px;
+
+    grid-template-columns: 1fr;
+  }
 }
 
 .product__img {
@@ -24,6 +30,12 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $color-gray-850;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .product__description {
@@ -31,6 +43,10 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-gray-700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .product__button {

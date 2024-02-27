@@ -58,6 +58,10 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+
+    & span:first-child {
+      margin-bottom: 20px;
+    }
   }
 }
 

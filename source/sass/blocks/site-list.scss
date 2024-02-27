@@ -46,6 +46,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $color--white;
+    &--index {
+      color: $color--white;
+    }
   }
 }
