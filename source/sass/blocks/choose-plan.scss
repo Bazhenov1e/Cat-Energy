@@ -1,14 +1,14 @@
 .choose-plan {
   padding: 20px;
 
-  background-image: url("../img/index-backgorund-mobile.png"),
+  color: $color--white;
+  text-align: center;
+
+  background-image: url("../img/index-background-mobile.png"),
     linear-gradient(180deg, #64a83b 62.5%, $color--white 62.5%);
   background-position: top center;
   background-size: 320px 305px, 100%;
   background-repeat: no-repeat;
-
-  color: $color--white;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -65,10 +65,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
     margin-left: 88px;
     margin-bottom: 15px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,6 +80,7 @@
 .choose-plan__picture {
   grid-column: 1/-1;
   grid-row: 3/5;
+
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {

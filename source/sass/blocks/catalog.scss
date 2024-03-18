@@ -1,12 +1,7 @@
 .catalog__container {
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
   }
 }
 
@@ -19,8 +14,14 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
   }
 }
 

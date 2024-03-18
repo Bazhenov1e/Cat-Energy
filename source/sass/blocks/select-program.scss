@@ -9,6 +9,50 @@
   }
 }
 
+.select-program__inner {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.select-program__heading {
+  margin-top: 27px;
+  margin-bottom: 37px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: none;
+  color: $color--black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.select-program__subheading {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
 .select-program__form {
   margin-bottom: 30px;
 

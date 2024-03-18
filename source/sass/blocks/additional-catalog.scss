@@ -15,12 +15,19 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .additional-catalog__content-wrapper {
   display: grid;
-  grid-template-columns: auto 245px;
-  column-gap: 80px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
 }
 
 .additional-catalog__list {
@@ -30,14 +37,12 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
     border-left: 1px solid $color-gray-250;
     border-right: 1px solid $color-gray-250;
-
-    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 45px;
     margin-bottom: 0;
 
     border-left: none;
@@ -55,36 +60,42 @@
   @media (min-width: $tablet-width) {
     padding: 25px 38px 26px;
   }
-
 }
 
 .additional-catalog__promo {
-  margin-bottom: 35px;
   position: relative;
 
+  margin-bottom: 35px;
   min-height: 290px;
+
   background-color: $color-primary-500;
   background-image: url("../../img/additional-catalog__bg_mobile.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    min-height: 200px;
+  }
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 20%;
+    top: 58px;
     left: 50%;
     transform: translateX(-50%);
+
     width: 80px;
     height: 78px;
 
-    background-image: url('../../img/svg/icon_gift.svg');
+    background-image: url("../../img/svg/icon_gift.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      left: 20%;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 57px;
+      left: 25%;
+      transform: translateX(-75%);
     }
 
     @media (min-width: $desktop-width) {
@@ -92,12 +103,6 @@
       left: 50%;
       transform: translateX(-50%);
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 200px;
-    margin-bottom: 0;
-    margin-top: 45px;
   }
 }
 
@@ -115,10 +120,12 @@
   color: $color--white;
 
   @media (min-width: $tablet-width) {
-    width: 160px;
     top: 50%;
     left: 60%;
     transform: translateY(-50%);
+
+    width: 160px;
+
     text-align: left;
   }
 

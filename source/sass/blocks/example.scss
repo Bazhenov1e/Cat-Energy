@@ -1,8 +1,9 @@
 .example {
+  padding: 25px 20px;
+
   font-family: $font-secondary;
   font-size: 14px;
   line-height: 18px;
-  padding: 25px 20px;
   color: $color-gray-700;
 
   background-color: $color-gray-100;
@@ -68,6 +69,7 @@
 .example__numbers {
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
@@ -99,7 +101,6 @@
   font-family: $font-main;
   font-size: 24px;
   line-height: 24px;
-
   color: $color--black;
 
   @media (min-width: $tablet-width) {
@@ -113,8 +114,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -17px;
-
   display: inline-flex;
+
   padding-left: 15px;
   padding-right: 15px;
   margin: 0;
@@ -150,7 +151,6 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-
   color: $color--black;
 
   @media (min-width: $tablet-width) {
@@ -161,11 +161,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    max-width: 365px;
-    align-self: stretch;
     display: flex;
     justify-content: space-between;
+    align-self: stretch;
+
+    margin: 0;
+    max-width: 365px;
   }
 }
 

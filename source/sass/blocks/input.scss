@@ -1,6 +1,6 @@
 .input {
   display: block;
-  padding: 12px 13px;
+  padding: 12px 45px 12px 12px;
   border: 1px solid #e7e7e7;
 
   font: inherit;
@@ -18,12 +18,16 @@
   }
 
   &--textarea {
-    
     padding: 8px;
     min-height: 150px;
+    width: 100%;
 
     white-space: nowrap;
     resize: none;
+
+    @media (min-width: $tablet-width) {
+      min-height: 174px;
+    }
 
     @media (min-width: $desktop-width) {
       padding: 10px 20px;

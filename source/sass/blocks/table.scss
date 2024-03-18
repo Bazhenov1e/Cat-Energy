@@ -1,11 +1,12 @@
 .table {
-  margin: 0;
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  margin: 0;
 }
 
 .table__value {
   margin: 0;
+  
   text-align: end;
 }

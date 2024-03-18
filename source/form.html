@@ -38,7 +38,9 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html"
+                >Каталог продукции</a
+              >
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -50,14 +52,13 @@
 
     <main class="page-main">
       <div class="content-wrapper">
-        <div class="page-main__inner">
-          <h1 class="page-main__heading">Подбор программы</h1>
-          <p class="page-main__subheading">
-            Заполните анкету, и мы подберем<br> программу питания для вашего кота
-          </p>
-          <section class="select-program">
-            <h2 class="visually-hidden">Форма анкеты</h2>
-  
+        <section class="select-program">
+          <div class="select-program__inner">
+            <h1 class="select-program__heading">Подбор программы</h1>
+            <p class="select-program__subheading">
+              Заполните анкету, и мы подберем<br />
+              программу питания для вашего кота
+            </p>
             <form
               class="select-program__form form"
               method="post"
@@ -65,7 +66,7 @@
             >
               <fieldset class="form__field form__field--parameters field-group">
                 <legend class="visually-hidden">Данные кота</legend>
-  
+
                 <ul class="field-group__list field-group__list--parameters">
                   <li class="field-group__item">
                     <label class="field">
@@ -104,10 +105,10 @@
                   </li>
                 </ul>
               </fieldset>
-  
+
               <fieldset class="form__field form__field--program field-group">
                 <legend class="visually-hidden">Выбор программы</legend>
-  
+
                 <ul class="field-group__list field-group__list--program">
                   <li class="field-group__item">
                     <label class="control">
@@ -145,12 +146,11 @@
                   </li>
                 </ul>
               </fieldset>
-  
               <fieldset class="form__field form__field--contacts field-group">
                 <legend class="field-group__legend">
                   Контактные данные (владельца кота)
                 </legend>
-  
+
                 <ul class="field-group__list field-group__list--contacts">
                   <li class="field-group__item">
                     <label class="field">
@@ -255,21 +255,21 @@
                   </li>
                 </ul>
               </fieldset>
-  
+
               <fieldset class="form__field form__field--comments field-group">
                 <legend class="field-group__legend">Комментарий</legend>
-                  <textarea
-                    class="field__input input input--textarea"
-                    placeholder="расскажите обо всех повадках кота"
-                    id="comment"
-                    name="comments"
-                    rows="5"
-                  ></textarea>
+                <textarea
+                  class="field-group__input input input--textarea"
+                  placeholder="расскажите обо всех повадках кота"
+                  id="comment"
+                  name="comments"
+                  rows="5"
+                ></textarea>
               </fieldset>
-  
+
               <fieldset class="form__field form__field--additional field-group">
-                <legend class="field-group__legend">Дополнительно</legend>
-  
+                <legend class="field-group__legend field-group__legend--additional">Дополнительно</legend>
+
                 <ul class="field-group__list field-group__list--additional">
                   <li class="field-group__item">
                     <label class="field-group__label">
@@ -281,13 +281,6 @@
                       />
                       <span class="field-group__lead"></span>
                       Сахорохаменитель
-                    </label>
-                  </li>
-                  <li class="field-group__item">
-                    <label class="field-group__label">
-                      <input class="field-group__checkbox" type="checkbox" name="milk" />
-                      <span class="field-group__lead"></span>
-                      Молоко
                     </label>
                   </li>
                   <li class="field-group__item">
@@ -306,6 +299,17 @@
                       <input
                         class="field-group__checkbox"
                         type="checkbox"
+                        name="milk"
+                      />
+                      <span class="field-group__lead"></span>
+                      Молоко
+                    </label>
+                  </li>
+                  <li class="field-group__item">
+                    <label class="field-group__label">
+                      <input
+                        class="field-group__checkbox"
+                        type="checkbox"
                         name="vitamins"
                       />
                       <span class="field-group__lead"></span>
@@ -314,24 +318,23 @@
                   </li>
                 </ul>
               </fieldset>
+
               <div class="form__submit-wrapper">
                 <button class="form__button" type="submit">
                   Отправить заявку
                 </button>
-                <span class="form__notification"
-                  ><sup>*</sup>&#32;— Обязательные поля</span
-                >
+                <span class="form__notification">* — Обязательные поля</span>
               </div>
             </form>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__content contacts__content--inner">
           <p class="contacts__title">приглашаем к сотрудничеству диллеров!</p>
-          <address class="contacts__adress">
+          <address class="contacts__address">
             <span
               >ул.Большая<br />
               Конюшенная, д 19/8</span
@@ -340,6 +343,7 @@
           </address>
         </div>
         <div class="contacts__map map">
+          <div class="map__pin"></div>
           <picture>
             <source
               srcset="img/map-desktop.png"
@@ -368,7 +372,12 @@
     <footer class="page-footer">
       <div class="page-footer__container">
         <a class="page-footer__logo" href="index.html">
-          <img src="img/svg/logo-sign.svg" alt="Логотип главной страницы" />
+          <img
+            src="img/svg/logo-sign.svg"
+            width="128"
+            height="24"
+            alt="Логотип главной страницы"
+          />
         </a>
 
         <ul class="page-footer__social social-list">
@@ -436,7 +445,7 @@
         </ul>
 
         <div class="page-footer__copyright developer">
-          <span class="footer-developer__name">HTML Academy</span>
+          <span class="developer__name">HTML Academy</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="27"
